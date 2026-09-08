@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2 meses de nós ❤️</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background: #fff5f7;
+            color: #4a2029;
+        }
+        .inicio {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 30px;
+            background: linear-gradient(
+                135deg,
+                #fff5f7,
+                #ffd6df
+            );
+        }
+        .inicio p {
+            color: #9d5365;
+        }
+        .inicio h1 {
+            font-size: 55px;
+            color: #c43d5c;
+            margin: 15px 0;
+        }
+        .subtitulo {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+        .botao {
+            background: #d94b6a;
+            color: white;
+            text-decoration: none;
+            padding: 14px 28px;
+            border-radius: 30px;
+            transition: 0.3s;
+        }
+        .botao:hover {
+            background: #b83250;
+            transform: scale(1.05);
+        }
+        .contador {
+            padding: 80px 20px;
+            text-align: center;
+            background: white;
+        }
+        .contador h2 {
+            color: #c43d5c;
+            font-size: 30px;
+            margin-bottom: 35px;
+        }
+        .tempo {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        .tempo div {
+            background: #fff0f3;
+            width: 110px;
+            padding: 20px 10px;
+            border-radius: 18px;
+            box-shadow: 0 5px 20px rgba(150, 50, 70, 0.1);
+        }
+        .tempo span {
+            display: block;
+            font-size: 30px;
+            font-weight: bold;
+            color: #d33e5d;
+        }
+        .tempo p {
+            font-size: 13px;
+            color: #8d5965;
+        }
+        .fotos {
+            padding: 80px 7%;
+            text-align: center;
+            background: #fff5f7;
+        }
+        .fotos h2 {
+            font-size: 30px;
+            color: #c43d5c;
+            margin-bottom: 40px;
+        }
+        .galeria {
+            max-width: 1000px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+        .foto {
+            height: 300px;
+            overflow: hidden;
+            border-radius: 18px;
+            background: #ffd6df;
+            box-shadow: 0 8px 25px rgba(150, 50, 70, 0.15);
+            transition: 0.3s;
+        }
+        .foto:hover {
+            transform: scale(1.03);
+        }
+        .foto img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+        .mensagem {
+            padding: 80px 20px;
+            background: #ffe1e8;
+            display: flex;
+            justify-content: center;
+        }
+
+        .carta {
+            max-width: 700px;
+            background: white;
+            padding: 45px;
+            border-radius: 25px;
+            box-shadow: 0 10px 40px rgba(130, 40, 60, 0.12);
+            text-align: center;
+        }
+        .carta h2 {
+            color: #c43d5c;
+            margin-bottom: 25px;
+        }
+        .carta p {
+            line-height: 1.8;
+            margin-bottom: 18px;
+            color: #68404a;
+        }
+        .final {
+            font-weight: bold;
+            color: #d13f5e !important;
+            margin-top: 30px;
+        }
+        footer {
+            text-align: center;
+            padding: 35px;
+            background: #c43d5c;
+            color: white;
+        }
+        .coracao {
+            position: fixed;
+            font-size: 25px;
+            opacity: 0.5;
+            z-index: 10;
+            animation: flutuar 4s ease-in-out infinite;
+            pointer-events: none;
+        }
+        .c1 {
+            top: 15%;
+            left: 5%;
+        }
+        .c2 {
+            top: 40%;
+            right: 5%;
+
+            animation-delay: 1s;
+        }
+        .c3 {
+            bottom: 20%;
+            left: 8%;
+            animation-delay: 2s;
+        }
+        .c4 {
+            bottom: 10%;
+            right: 10%;
+            animation-delay: 1.5s;
+        }
+        @keyframes flutuar {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-15px);
+            }
+        }
+        @media (max-width: 700px) {
+            .inicio h1 {
+                font-size: 40px;
+            }
+            .galeria {
+                grid-template-columns: 1fr 1fr;
+
+                gap: 12px;
+            }
+            .foto {
+                height: 220px;
+            }
+            .carta {
+                padding: 30px 20px;
+            }
+            .tempo div {
+                width: 85px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="coracao c1">❤️</div>
+    <div class="coracao c2">💗</div>
+    <div class="coracao c3">💕</div>
+    <div class="coracao c4">❤️</div>
+    <section class="inicio">
+        <p>Para a pessoa que faz meus dias melhores ❤️</p>
+        <p class="subtitulo">
+            Que seja Nós para sempre
+        </p>
+        <a href="#fotos" class="botao">
+            ver nossas fotos ↓
+        </a>
+    </section>
+    <section class="contador">
+        <h2>Nosso tempo juntos ❤️</h2>
+        <div class="tempo">
+            <div>
+                <span id="dias">00</span>
+                <p>dias</p>
+            </div>
+            <div>
+                <span id="horas">00</span>
+                <p>horas</p>
+            </div>
+
+            <div>
+                <span id="minutos">00</span>
+                <p>minutos</p>
+            </div>
+
+            <div>
+                <span id="segundos">00</span>
+                <p>segundos</p>
+            </div>
+        </div>
+    </section>
+    <section class="fotos" id="fotos">
+        <p>alguns das nossas fotos favoritas 📸</p>
+        <h2>Eu te amo</h2>
+        <div class="galeria">
+            <div class="foto">
+                <img src="fotos/foto1.jpg" alt="Nossa foto">
+            </div>
+            <div class="foto">
+                <img src="fotos/foto2.jpg" alt="Nossa foto">
+            </div>
+
+            <div class="foto">
+                <img src="fotos/foto3.jpg" alt="Nossa foto">
+            </div>
+
+            <div class="foto">
+                <img src="fotos/foto4.jpg" alt="Nossa foto">
+            </div>
+
+            <div class="foto">
+                <img src="fotos/foto5.jpg" alt="Nossa foto">
+            </div>
+
+            <div class="foto">
+                <img src="fotos/foto6.jpg" alt="Nossa foto">
+            </div>
+        </div>
+    </section>
+    <section class="mensagem">
+        <div class="carta">
+            <h2>Você é muito importante pra mim ❤️</h2>
+            <p>
+                Minha princesa eu sei que em tão pouco tempo (2 Meses) 
+                 Eu nunca imaginei que se tornaria a minha felicidade,
+                    toda vez que vejo seu sorriso, seus olhos,
+                 ate sua linguinha cortada kkkkk.  
+            </p>
+            <p>
+                Você me faz bem de um jeito que eu nem sei explicar.
+                Às vezes meu dia nem está tão bom, mas quando
+                converso com você que tudo fica melhor, meu amor depois que ficamos na aquela casa deitados juntos
+                eu realmente percebi o quanto Eu te amo, tenho que comfessar que deu uma vontadesinha de chorar por ter conseguido ter conseguido esta menina incrivel que vc é.
+            </p>
+            <p>
+                Eu gosto muito dos nossos momentos, das nossas
+                conversas, das nossas risadas e até das brincadeiras
+                que a gente faz kkkkkkk, Nosso selinho com  a ligua
+                as risadas que damos depois kkkkk por isso que eu te amo,
+                voçe não me julga mas da risada juntos kkkkk.
+            </p>
+            <p>
+                E esses dois meses serão só o começo da nossa historia
+                 tenho certeza de muitos outros momentos incriveis que ainda vamos viver juntos.
+            </p>
+            <p class="final">
+                obrigado pelos 2 meses de nós. 
+            </p>
+        </div>
+    </section>
+    <footer>
+        feito com meu coração para minha baixinha ❤️
+    </footer>
+    <script>
+        const inicio = new Date(2026, 6, 5, 0, 0);
+        function atualizarContador() {
+            const agora = new Date();
+            const diferenca = agora - inicio;
+            const segundosTotais =
+                Math.floor(diferenca / 1000);
+            const dias =
+                Math.floor(segundosTotais / 86400);
+            const horas =
+                Math.floor(
+                    (segundosTotais % 86400) / 3600
+                );
+            const minutos =
+                Math.floor(
+                    (segundosTotais % 3600) / 60
+                );
+            const segundos =
+                segundosTotais % 60;
+            document.getElementById("dias").textContent =
+                String(dias).padStart(2, "0");
+            document.getElementById("horas").textContent =
+                String(horas).padStart(2, "0");
+            document.getElementById("minutos").textContent =
+                String(minutos).padStart(2, "0");
+            document.getElementById("segundos").textContent =
+                String(segundos).padStart(2, "0");
+        }
+        atualizarContador();
+        setInterval(atualizarContador, 1000);
+    </script>
+</body>
+</html>
